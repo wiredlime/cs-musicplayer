@@ -1,0 +1,17 @@
+body {
+  background-color: #f0f7e0;
+  background-color: rgba(10, 8, 8, 0.922);
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  -webkit-box-shadow: inset 5px 5px 15px 16px rgba(255, 255, 255, 0.55);
+  box-shadow: inset 5px 5px 15px 16px rgba(255, 255, 255, 0.55);
+}
+marquee {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #5e376d;
+}
+.track:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import TrackList from "./components/TrackList";
+import Controller from "./components/Controller";
+import { MusicPlayerProvider } from "./contexts/MusicPlayerContext";
+import Stack from "@mui/material/Stack";
+import Banner from "./components/Banner";
+import "./Globalcss.css";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MusicPlayerProvider>
+      <Stack
+        className="container"
+        m={8}
+        direction="column"
+        alignItems="center"
+        justifyContent="space-between"
+        width="300px"
+        height="500px"
+        sx={{
+          backgroundColor: "#D3BBDD",
+          borderRadius: "70px",
+        }}
+      >
+        <Banner />
+        <TrackList />
+        <Controller />
+      </Stack>
+    </MusicPlayerProvider>
   );
-}
+};
 
 export default App;
