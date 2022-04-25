@@ -3,7 +3,7 @@ import Track1 from "./track1.mp3";
 import Track2 from "./track2.mp3";
 import Track3 from "./track3.mp3";
 
-const MusicPlayerContext = React.createContext([{}, () => {}]);
+const MusicPlayerContext = React.createContext();
 
 const MusicPlayerProvider = (props) => {
   const [state, setState] = useState({
